@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/sheet.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header__menu">
+            <div class="header__butt">В начало</div>
+            <div class="header__butt">Личный кабинет</div>
+            <a href="https://www.youtube.com/" class="header__butt">Мои курсы</a>
+        </div>
+
+        <div class="header__acc">
+            <img src="./img/bell.png" alt="" />
+            <img src="./img/sms.png" alt="" />
+            <img src="./img/profile.png" alt="" />
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="sidenav__close-btn" onclick="closeNav()">×</a>
+        <a href="#" class="sidenav__a">A</a>
+        <a href="#" class="sidenav__a">B</a>
+        <a href="#" class="sidenav__a">O</a>
+        <a href="#" class="sidenav__a">B</a>
+        <a href="#" class="sidenav__a">A</a>
+    </div>
+
+    <div id="main">
+
+        <span id="openbtn" class="sidenav__open-btn" onclick="openNav()">&lt</span>
+
+        <div class="logo">
+            <img src="./img/logotcmc.png" alt="" />
+        </div>
+
+        <div class="banner">
+            <img src="./img/header-2.jpg" alt="" />
+            <div class="banner__square">
+                <button class="banner__butt">Наш сайт</button>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="news__ads">Объявления сайта</div>
+            <div class="news__sub">
+                <button class="news__but">Анулировать подписку</button>
+            </div>
+            <div class="news__theme">Нет тем для обсуждения</div>
+        </div>
+
+        <div class="search">
+            <form>
+                <div class="search__line">
+                    <div contenteditable="true" class="search__input" placeholder="Введите текст"
+                        oninput="checkInput()"></div>
+                    <img src="./img/loop.png" onclick="performSearch()" alt="">
+                </div>
+            </form>
+        </div>
+
+        <div class="courses">
+            <div class="courses__title">Мои курсы</div>
+            <div class="courses__list">
+                <div class="course">
+                    <div class="course__title">
+                        МДК.01.06 Основы программирования и конфигурирования в
+                        корпоративных информационных системах(КИС) (Шилова А.С.)
+                    </div>
+                    <div class="course__info">
+                        <div class="course__img">
+                            <img src="./img/1c.png" alt="" />
+                        </div>
+                        <div class="course__block">
+                            <div class="course__summary">
+                                <div class="">Шилова А.С.</div>
+                                <div class="">
+                                    09.02.07 Информационные системы и программирование
+                                </div>
+                            </div>
+                            <div class="course__teachers">
+                                <div>
+                                    <div class="course__teach">Учитель:&nbsp</div>
+                                    <div class="course__teach">Шилова Алина Сергеевна</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="bottom">
+                <div class="bottom__about">
+                    <div class="bottom__logo"></div>
+                    <div class="bottom__text">
+                        Санкт-Петербургское государственное бюджетное профессиональное
+                        образовательное учреждение "Санкт-Петербургский технический
+                        колледж управления и коммерции" (СПб ГБПОУ "СПб ТКУиК") создано
+                        на основании распоряжения Совета народных комиссаров СССР от 6
+                        апреля 1944 года № 7351-р.
+                    </div>
+                </div>
+                <div class="bottom__cont">
+                    <div class="bottom__head">Контакты</div>
+                    <div class="bottom__address">
+                        Санкт-Петербург, Б.Сампсониевский пр., д. 61., литер А
+                    </div>
+                    <div class="bottom__phone">
+                        Телефон: +7 (812) 608-00-25
+                    </div>
+                    <div class="bottom__email">
+                        Эл. почта info@tcmc.spb.ru
+                    </div>
+                </div>
+            </div>
+            <div class="footer__foot">
+                <div class="text">ТКУиК - 2023</div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
